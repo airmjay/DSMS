@@ -1,0 +1,9 @@
+parent-name-check
+  parent-surname-check
+  parent-other-check
+  parent-address-check
+  parent-email-check
+  parent-id-check
+  parent-password-check
+  parent-cpassword-check
+  parent-save-check

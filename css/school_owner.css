@@ -1,0 +1,78 @@
+table td 
+{
+    white-space: nowrap;
+}
+.biggest
+{
+   font-size: 18px !important;
+}
+.big
+{
+    font-size: 16px !important;
+}
+.small
+{
+    font-size: 14px !important;
+}
+.smallest 
+{
+    font-size: 12px !important;
+}
+.under 
+{
+ text-decoration: underline !important;
+}
+.center 
+{
+    text-align: center !important;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.event-div hr
+{
+ color: darkgray;
+}
+.border-round
+{
+    border-radius: 20px;
+}
+.w-calender
+{
+    width: 80%;
+}
+.info-event , .result-info , .resources-info, .print-info, .class-info , .transcript-info
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    z-index: 100;
+    display: none;
+}
+.info-event-content, .result-info-body, .book-author-details, .class-info-div, .transcript-div
+{
+    min-height: 85vh;
+
+}
+.bold
+{
+    font-weight: 900;
+}
+.picture-div
+{
+    height: 100px;
+    width: 100px;
+    border: 2px solid gray;
+}
+.picture-div-card
+{
+   height: 150px;
+    width: 100%;
+    border: 2px solid gray; 
+}
+.boder
+{
+    border-radius: 0px !important;
+}

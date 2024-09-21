@@ -1,0 +1,92 @@
+pagination
+// Assume $data is an array of items to be paginated
+$page = isset($_GET['page']) ? $_GET['page'] : 1;
+$itemsPerPage = 10;
+$start = ($page - 1) * $itemsPerPage;
+$paginatedData = array_slice($data, $start, $itemsPerPage);
+echo json_encode($paginatedData);
+
+function loadPage(page) {
+  $.ajax({
+    url: 'pagination.php',
+    type: 'GET',
+    data: { page: page },
+    dataType: 'json',
+    success: function(data) {
+      // Update the UI with the paginated data
+    }
+  });
+}
+
+// Assume there's a "next" and "previous" button to navigate pages
+$('#nextBtn').click(function() {
+  currentPage++;
+  loadPage(currentPage);
+});
+
+$('#prevBtn').click(function() {
+  currentPage--;
+  loadPage(currentPage);
+});
+
+scroll top
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scroll to Div Example</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+  #targetDiv {
+    height: 500px; /* Just for demonstration */
+    background-color: lightblue;
+  }
+</style>
+</head>
+<body>
+
+<button id="scrollButton">Scroll to Target Div</button>
+
+<div id="targetDiv">
+  <!-- Content of the target div -->
+  This is the target div you want to scroll to.
+</div>
+
+<script>
+$(document).ready(function() {
+  $("#scrollButton").click(function() {
+    $('html, body').animate({
+      scrollTop: $("#targetDiv").offset().top
+    }, 1000); // Adjust the duration as needed (in milliseconds)
+  });
+});
+</script>
+
+</body>
+</html>
+csv
+<?php
+// Check if a file was submitted
+if (isset($_POST["submit"])) {
+    // Database connection
+    $conn = mysqli_connect("localhost", "username", "password", "your_database");
+
+    // Check if the file is a CSV file
+    $file = $_FILES['file']['tmp_name'];
+    $handle = fopen($file, "r");
+    $firstRow = true;
+    while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+        if (!$firstRow) {
+            $sql = "INSERT INTO your_table (column1, column2, column3) VALUES ('" . $data[0] . "', '" . $data[1] . "', '" . $data[2] . "')";
+            mysqli_query($conn, $sql);
+        } else {
+            $firstRow = false;
+        }
+    }
+    fclose($handle);
+
+    // Close the database connection
+    mysqli_close($conn);
+}
+?>

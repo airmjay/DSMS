@@ -1,0 +1,192 @@
+*
+{
+	font-size: 14px !important;
+	font-family: cursive;
+}
+table td 
+{
+	white-space: nowrap;
+}
+.navbar-image
+{
+	height: 30px;
+	width: 30px;
+	border-radius: 20px;
+	border: 1px solid gray;
+	overflow: hidden;
+	padding: 0;
+}
+.side-left .list-group-item, .menu-push
+{
+	cursor: pointer;
+}
+.Dashboard i 
+{
+	font-size: 25px !important;
+	margin-bottom: 5px;
+	padding-top: 10px;
+}
+.message-area
+{
+	height: 70vh;
+	overflow-y: scroll;
+}
+.right-sidebar
+{
+  z-index: 10;
+
+}
+.side-left
+{
+  z-index: 10;
+
+}
+.message-user-list
+{
+	height: 70vh;
+	overflow-y: scroll;	
+}
+
+table
+{
+	cursor: pointer;
+}
+.Dashboard .card-count .d-flex
+{
+	height: 90px;
+	cursor: pointer;
+}
+.message-area::-webkit-scrollbar-track, .message-user-list::-webkit-scrollbar-track
+{
+  background-color: orangered;
+  border-radius: 50%;
+}
+.message-area::-webkit-scrollbar-thumb , .message-user-list::-webkit-scrollbar-thumb
+{
+	background-color: black;
+	border-radius: 10%;
+
+}
+.message-area::-webkit-scrollbar, .message-user-list::-webkit-scrollbar
+{
+	background-color: orange;
+	width: 5px;
+	
+	
+}
+.Dashboard .col-md-3 .d-flex:hover
+{
+	transform: scale(1.02);
+}
+.Dashboard-card-2 span 
+{
+   background-color: black !important;
+   height: 30px !important;
+   width: 30px !important;
+   border-radius: 50px;
+   margin-top: 0;
+   display: inline-block;
+}
+#staff-list .card-title
+{
+	font-size: 12px !important;
+
+}
+.card-profile-color-body .card
+{
+	background-color: #FBFBFA;
+}
+#staff-list .card-text
+{
+	font-size: 12px !important;
+}
+.staff-add, .staff-back, .sm
+{
+	font-size: 12px !important;
+}
+.card-profile-begin div, .card-profile-begin img 
+{
+	font-size: 12px !important;
+	font-weight: 100;
+}
+.side-design
+{
+	font-size: 14px !important;
+}
+.card 
+{
+	cursor: pointer;
+}
+.profile-message span
+{
+	width: 30px;
+	height:30px;
+	background-color:orange !important;
+	display: inline-block;
+	border-radius: 50%;
+}
+.message-div-display 
+{
+	display: none;
+	position: absolute;
+	top: 10px;
+	left: 20%;
+	width: 70%;
+	padding: 10px;
+	min-height: 50%;
+	margin: 10px;
+	z-index: 100 !important;
+}
+.message-div-display-2 
+{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	padding: 0px;
+	min-height: 70%;
+	z-index: 1000;
+}
+.display-items-1
+{
+	width: 70%;
+	min-height: 70vh;
+	margin: auto;
+	padding: 10px;
+	margin-top: 5px;
+}
+.image-bordered
+{
+	width: 100%;
+	height: 150px;
+}
+.picture-div
+{
+	height: 150px;
+	width: 150px;
+	/*border: 1px solid black;*/
+	margin-top: 10px;
+}
+.picture-div-2
+{
+	height: 150px;
+	width: 150px;
+	/*border: 1px solid black;*/
+	margin-top: 10px;
+}
+.list-card
+{
+	border: 1px solid gray;
+	padding: 5px;
+	margin-bottom:10px;
+}
+.list-card span
+{
+  color: gray;
+}/*
+.picture-div-card
+{
+	width:400px;
+}*/

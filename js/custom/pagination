@@ -1,0 +1,23 @@
+    $(document).ready(function() {
+      $('.pagination a').click(function(e) {
+        e.preventDefault(); // Prevent default link behavior
+        var page = $(this).attr('href').split('page=')[1];
+        loadContent(page);
+      });
+
+      function loadContent(page) {
+        $.ajax({
+          url: 'data.php?page=' + page,
+          type: 'GET',
+          dataType: 'json',
+          success: function(data) {
+            // Update the content container with new data here
+            // (example: update the innerHTML of a specific element)
+            $('#content').html(data); // Replace with your selector
+          },
+          error: function(jqXHR, textStatus, errorThrown) {
+            console.error("Error:", textStatus, errorThrown);
+          }
+        });
+      }
+    });
