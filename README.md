@@ -11,7 +11,7 @@ A:11:100      username.					|
 @Password123  Password.					|
 ________________________________________________________+
 
-Homepage for Mascotacademy Localhost:8080/29   
+Homepage for Mascotacademy Localhost:8080/29    
 ________________________________________________________+
 Login School Staff management for Mascot Academy.	|
 S:29:Mascotacademy@gmail.com  username.			|
